@@ -1,6 +1,25 @@
 # Varnio website (static, no build step)
 
-Files: index.html, what-we-do.html, about.html, 404.html, assets/ (style.css, main.js, hero.js).
+## Structure
+
+```text
+.
+├── index.html
+├── what-we-do.html
+├── projects.html
+├── about.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+└── assets/
+    ├── style.css
+    ├── main.js
+    ├── hero.js
+    └── gl.js
+```
+
+Keep page routes, deployment metadata, and the sitemap at the repository root for GitHub Pages. `assets/` contains shared styles and scripts only.
+
 Preview locally: `python3 -m http.server 8000` then open http://localhost:8000
 
 ## Deploy: GitHub Pages
