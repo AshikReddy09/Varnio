@@ -9,13 +9,13 @@
     <title>About | Varnio</title>
     <meta
       name="description"
-      content="Varnio approach, current work and how to start a conversation."
+      content="Learn how Varnio helps companies, startups and growing businesses turn digital transformation and AI goals into practical solutions."
     />
     <meta name="theme-color" content="#111311" />
     <meta property="og:title" content="About | Varnio" />
     <meta
       property="og:description"
-      content="Varnio approach, current work and how to start a conversation."
+      content="Learn how Varnio helps companies, startups and growing businesses turn digital transformation and AI goals into practical solutions."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://varnio.co.in/about.html" />
@@ -41,7 +41,25 @@
       }
     </script>
   </head>
-  <body>
+  <body class="loading">
+    <div class="site-loader" id="site-loader" role="status" aria-label="Loading Varnio">
+      <svg class="loader-lines" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-80 286H520l42 18h438l28-12h520" />
+        <path d="M-80 314H380l55-14h390l28 11h670" />
+        <path d="M-80 342H610l35 9h260l46-16h582" />
+        <path d="M-80 558H450l48-12h370l35 15h590" />
+        <path d="M-80 586H570l30 11h420l42-15h430" />
+        <path d="M-80 614H360l46-14h380l34 10h682" />
+        <path d="M190 900V680l18-32V290l-14-32V0" />
+        <path d="M1240 900V620l-16-35V320l18-30V0" />
+        <path class="loader-line-accent" d="M0 450h430l34 4h520l30-6h426" />
+        <path d="M0 452h375l28-4h660l24 5h353" />
+      </svg>
+      <div class="loader-wordmark" aria-hidden="true">
+        <span>V</span><span>a</span><span>r</span><span>n</span><span>i</span><span>o</span>
+      </div>
+    </div>
+    <script src="assets/loading-screen.js"></script>
     <canvas id="gl" aria-hidden="true"></canvas>
     <div class="rail" aria-hidden="true"><i id="rail"></i></div>
     <div id="bar"></div>
@@ -74,10 +92,10 @@
           >
         </h1>
         <p>
-          Organizations rarely struggle because they lack another tool. They
-          struggle because the objective is unclear, priorities compete, and the
-          system around the work has not been understood. We make the problem
-          legible first.
+          We partner with companies, startups and growing businesses to make
+          digital transformation practical. Before recommending software or AI,
+          we understand your goals, the way your business works and what needs
+          to change—then help shape and deliver the right solution.
         </p>
       </section>
       <section id="work" style="background: rgba(23, 26, 23, 0.72)">
@@ -92,7 +110,7 @@
             <span class="dot"></span>
             <div>
               <b>Digital application initiative</b>
-              <p style="font-size: 14px; margin-top: 6px">
+              <p style="font-size: 1rem; margin-top: 6px">
                 Active delivery from clearer requirements through solution
                 execution.
               </p>
@@ -102,83 +120,20 @@
             <span class="dot" style="animation-delay: 0.7s"></span>
             <div>
               <b>Technology direction and planning</b>
-              <p style="font-size: 14px; margin-top: 6px">
+              <p style="font-size: 1rem; margin-top: 6px">
                 Discovery around a complex business and technology question.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section id="contact">
-        <div class="rv">
-          <div class="mono">Contact</div>
-          <h2 style="margin: 16px 0">Start with <em>the problem.</em></h2>
-          <p>
-            You do not need to know which service you need. Start with the
-            objective, the uncertainty or the thing that is not working.
-          </p>
-          <form id="cf">
-            <input name="name" placeholder="Name" required /><input
-              name="email"
-              type="email"
-              placeholder="Email"
-              required
-            /><input name="org" placeholder="Organization" /><textarea
-              name="msg"
-              placeholder="What is the objective, or the thing not working?"
-              required
-            ></textarea
-            ><input
-              class="hp"
-              name="website"
-              tabindex="-1"
-              autocomplete="off"
-            /><button class="btn" type="submit">Send ↗</button>
-            <p id="ok" hidden style="color: var(--signal)">
-              Opening your email app. Thank you.
-            </p>
-          </form>
-        </div>
-      </section>
+      <div data-component="contact"></div>
     </main>
-    <footer>
-      <div class="fg">
-        <div>
-          <div class="logo">VARNIO<i>.</i></div>
-          <p style="margin-top: 12px; font-size: 14px">
-            Complexity, clarified.<br />Strategy, architecture and technology
-            execution for organizations navigating complex challenges.
-          </p>
-        </div>
-        <div>
-          <div class="mono">Explore</div>
-          <a href="what-we-do.html">What we do</a
-          ><a href="index.html#method">How we work</a
-          ><a href="what-we-do.html#architecture">Architecture</a
-          ><a href="projects.html">Projects</a><a href="about.html">About</a>
-        </div>
-        <div>
-          <div class="mono">Capabilities</div>
-          <a href="what-we-do.html">Strategy & Advisory</a
-          ><a href="what-we-do.html">Project & Organizational Planning</a
-          ><a href="what-we-do.html">CRM & Business Process Strategy</a
-          ><a href="what-we-do.html">Automation Strategy</a
-          ><a href="what-we-do.html">Solution Architecture</a>
-        </div>
-        <div>
-          <div class="mono">Connect</div>
-          <a href="about.html#contact">Start a conversation ↗</a
-          ><a href="mailto:hello@varnio.co.in">hello@varnio.co.in</a>
-        </div>
-      </div>
-      <div class="big" aria-hidden="true">VARNIO.</div>
-      <div class="copy mono">
-        <span>© 2026 Varnio. All rights reserved.</span
-        ><span>Strategy · Systems · Momentum</span>
-      </div>
-    </footer>
+    <div data-component="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="assets/gl.js"></script>
     <script src="assets/main.js"></script>
+    <script src="assets/contact.js"></script>
+    <script src="assets/components.js"></script>
   </body>
 </html>

@@ -9,13 +9,20 @@
 ├── projects.html
 ├── about.html
 ├── 404.html
+├── components/
+│   ├── contact.html
+│   ├── footer.html
+│   └── loading-screen.html
 ├── robots.txt
 ├── sitemap.xml
 └── assets/
     ├── style.css
+    ├── components.js
+    ├── contact.js
     ├── main.js
     ├── hero.js
-    └── gl.js
+    ├── gl.js
+    └── loading-screen.js
 ```
 
 Keep page routes, deployment metadata, and the sitemap at the repository root for GitHub Pages. `assets/` contains shared styles and scripts only.
@@ -37,5 +44,6 @@ Copy lives in the HTML files. Colors/type in `assets/style.css` (:root variables
 
 ## Notes
 - Pages: index, what-we-do, projects, about, 404. Shared motion/3D code: assets/gl.js (Three.js r128 from cdnjs, needs internet), assets/hero.js, assets/main.js.
+- Shared footer and contact markup live in `components/` and are inserted by `assets/components.js`; the standalone loading screen is displayed in an iframe and dismissed by `assets/loading-screen.js`. The contact form behavior is in `assets/contact.js`.
 - The 3D scene is skipped automatically for visitors with reduced-motion enabled; the site still works without it.
 - Project metrics shown are portfolio scope only. Add measured results (leads, traffic, conversion) once analytics baselines exist.

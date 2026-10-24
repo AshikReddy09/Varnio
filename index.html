@@ -1,36 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
-    <title>Varnio | Complexity, clarified.</title>
-    <meta
-      name="description"
-      content="Varnio is a strategy and technology consulting firm helping organizations turn complexity into clear direction and disciplined execution."
-    />
-    <meta name="theme-color" content="#111311" />
-    <meta property="og:title" content="Varnio | Complexity, clarified." />
-    <meta
-      property="og:description"
-      content="Varnio is a strategy and technology consulting firm helping organizations turn complexity into clear direction and disciplined execution."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://varnio.co.in/index.html" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111311'/%3E%3Cpath d='M8 36c10-24 18 24 24 0s16 0 24-4' stroke='%23C9F26B' stroke-width='4' fill='none'/%3E%3C/svg%3E"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-    <script type="application/ld+json">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Varnio | Digital Transformation &amp; AI</title>
+  <meta name="description"
+    content="Varnio helps companies, startups and growing businesses with end-to-end digital transformation, technology strategy and practical AI." />
+  <meta name="theme-color" content="#111311" />
+  <meta property="og:title" content="Varnio | Digital Transformation &amp; AI" />
+  <meta property="og:description"
+    content="Varnio helps companies, startups and growing businesses with end-to-end digital transformation, technology strategy and practical AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://varnio.co.in/index.html" />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111311'/%3E%3Cpath d='M8 36c10-24 18 24 24 0s16 0 24-4' stroke='%23C9F26B' stroke-width='4' fill='none'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
@@ -40,327 +31,322 @@
         "slogan": "Complexity, clarified."
       }
     </script>
-  </head>
-  <body>
-    <canvas id="gl" aria-hidden="true"></canvas>
-    <div class="rail" aria-hidden="true"><i id="rail"></i></div>
-    <div id="bar"></div>
-    <nav>
-      <a class="logo" href="index.html">VARNIO<i>.</i></a>
-      <div
-        class="nl"
-        style="
+</head>
+
+<body class="loading">
+  <div class="bg-overlay" aria-hidden="true"></div>
+  <div class="site-loader" id="site-loader" role="status" aria-label="Loading Varnio">
+    <svg class="loader-lines" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-80 286H520l42 18h438l28-12h520" />
+      <path d="M-80 314H380l55-14h390l28 11h670" />
+      <path d="M-80 342H610l35 9h260l46-16h582" />
+      <path d="M-80 558H450l48-12h370l35 15h590" />
+      <path d="M-80 586H570l30 11h420l42-15h430" />
+      <path d="M-80 614H360l46-14h380l34 10h682" />
+      <path d="M190 900V680l18-32V290l-14-32V0" />
+      <path d="M1240 900V620l-16-35V320l18-30V0" />
+      <path class="loader-line-accent" d="M0 450h430l34 4h520l30-6h426" />
+      <path d="M0 452h375l28-4h660l24 5h353" />
+    </svg>
+    <div class="loader-wordmark" aria-hidden="true">
+      <span>V</span><span>a</span><span>r</span><span>n</span><span>i</span><span>o</span>
+    </div>
+  </div>
+  <script src="assets/loading-screen.js"></script>
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <div class="rail" aria-hidden="true"><i id="rail"></i></div>
+  <div id="bar"></div>
+  <nav>
+    <a class="logo" href="index.html">VARNIO<i>.</i></a>
+    <div class="nl" style="
           display: flex;
           gap: 26px;
           align-items: center;
           color: var(--mist);
-        "
-      >
-        <a class="hide act" href="index.html">Home</a
-        ><a class="hide" href="what-we-do.html">What we do</a
-        ><a class="hide" href="projects.html">Projects</a
-        ><a class="hide" href="about.html">About</a
-        ><a class="pill" style="color: var(--bone)" href="about.html#contact"
-          >Start a conversation ↗</a
-        >
+        ">
+      <a class="hide act" href="index.html">Home</a><a class="hide" href="what-we-do.html">What we do</a><a class="hide"
+        href="projects.html">Projects</a><a class="hide" href="about.html">About</a><a class="pill"
+        style="color: var(--bone)" href="about.html#contact">Start a conversation ↗</a>
+    </div>
+  </nav>
+  <main>
+
+    <section id="hero">
+      <canvas id="c" aria-hidden="true"></canvas>
+
+      <div class="mono">
+        Digital transformation / AI / strategy / execution
       </div>
-    </nav>
-    <main>
-      <section id="hero">
-        <canvas id="c" aria-hidden="true"></canvas>
-        <div class="mono">Strategy / planning / architecture / execution</div>
-        <h1 style="margin: 14px 0 22px">
-          <span class="hl"><span>Complexity,</span></span
-          ><span class="hl"
-            ><span><em>clarified.</em></span></span
-          >
-        </h1>
-        <p>
-          Varnio turns complex business and technology challenges into clear
-          strategies, structured initiatives and solutions built to move
-          forward.
-        </p>
-        <div class="ctas">
-          <a class="btn" href="about.html#contact">Start a conversation ↗</a
-          ><a class="btn o" href="#method">Explore how we work ↓</a>
-        </div>
-      </section>
 
-      <div class="mq" aria-hidden="true"><div id="mq"></div></div>
+      <h1>
+        <span class="hl"><span>Complexity,</span></span>
+        <span class="hl"><span><em>clarified.</em></span></span>
+      </h1>
 
-      <section>
-        <div class="split">
-          <div class="rv">
-            <div class="mono">01 / 04 — Point of view</div>
-            <h2 style="margin: 16px 0 24px">Think before <em>we build.</em></h2>
-            <p>
-              Organizations rarely struggle because they lack another tool. They
-              struggle because the objective is unclear and priorities compete.
-              We make the problem legible first.
-            </p>
-          </div>
-          <div class="orb rv">
-            <svg viewBox="0 0 200 200">
-              <circle class="s" cx="100" cy="100" r="30" />
-              <circle class="s d" cx="100" cy="100" r="60" />
-              <circle class="s" cx="100" cy="100" r="90" />
-              <g class="ring1"><circle class="f" cx="100" cy="40" r="4" /></g>
-              <g class="ring2">
-                <circle class="f" cx="190" cy="100" r="3" />
-                <circle cx="10" cy="100" r="3" fill="#ECEAE2" />
-              </g>
-              <g class="ring3">
-                <circle cx="100" cy="190" r="3" fill="#ECEAE2" />
-              </g>
-              <circle class="f pu" cx="100" cy="100" r="6" />
-              <text
-                x="100"
-                y="152"
-                fill="#8A9087"
-                font-size="7"
-                text-anchor="middle"
-                font-family="monospace"
-                letter-spacing="1.5"
-              >
-                OBJECTIVE · STRUCTURE · OUTCOME
-              </text>
-            </svg>
-          </div>
-        </div>
-      </section>
+      <p class="hero-copy">
+        We help companies, startups and growing businesses transform how
+        they work with digital strategy, connected systems, custom software
+        and practical AI. From the first roadmap through implementation, we
+        turn business goals into technology that supports lasting growth.
+      </p>
 
-      <section id="method" style="background: rgba(23, 26, 23, 0.72)">
+      <div class="ctas">
+        <a class="btn" href="about.html#contact">
+          Start a conversation ↗
+        </a>
+        <a class="btn o" href="#method">
+          Explore how we work ↓
+        </a>
+      </div>
+    </section>
+
+
+    <div class="mq" aria-hidden="true">
+      <div id="mq"></div>
+    </div>
+
+    <section>
+      <div class="split">
         <div class="rv">
-          <div class="mono">02 / 04 — How we work</div>
-          <h2 style="margin-top: 16px">From objective <em>to outcome.</em></h2>
-        </div>
-        <div class="grid">
-          <div class="card rv">
-            <div class="mono">01</div>
-            <svg viewBox="0 0 120 60">
-              <circle class="s" cx="60" cy="30" r="22" />
-              <circle class="f pu" cx="30" cy="18" r="2" />
-              <circle
-                class="f pu"
-                cx="84"
-                cy="40"
-                r="2"
-                style="animation-delay: 0.6s"
-              />
-              <circle
-                class="f pu"
-                cx="70"
-                cy="14"
-                r="2"
-                style="animation-delay: 1.2s"
-              />
-              <circle class="g" cx="60" cy="30" r="3" />
-            </svg>
-            <div>
-              <h3>Understand</h3>
-              <p>
-                Define the objective, context, constraints and people affected.
-              </p>
-            </div>
-          </div>
-          <div class="card rv">
-            <div class="mono">02</div>
-            <svg viewBox="0 0 120 60">
-              <path
-                class="s"
-                d="M5 30H40C60 30 60 10 80 10H115M40 30C60 30 60 50 80 50H115"
-              />
-              <path class="g d" d="M5 30H40C60 30 60 10 80 10H115" />
-            </svg>
-            <div>
-              <h3>Strategize</h3>
-              <p>
-                Assess options, set priorities and create a direction worth
-                investing in.
-              </p>
-            </div>
-          </div>
-          <div class="card rv">
-            <div class="mono">03</div>
-            <svg viewBox="0 0 120 60">
-              <g class="f">
-                <rect class="sq" x="20" y="10" width="20" height="16" />
-                <rect
-                  class="sq"
-                  x="50"
-                  y="10"
-                  width="20"
-                  height="16"
-                  style="animation-delay: 0.5s"
-                />
-                <rect
-                  class="sq"
-                  x="80"
-                  y="10"
-                  width="20"
-                  height="16"
-                  style="animation-delay: 1s"
-                />
-                <rect
-                  class="sq"
-                  x="20"
-                  y="34"
-                  width="20"
-                  height="16"
-                  style="animation-delay: 1.5s"
-                />
-                <rect
-                  class="sq"
-                  x="50"
-                  y="34"
-                  width="20"
-                  height="16"
-                  style="animation-delay: 2s"
-                />
-                <rect
-                  class="sq"
-                  x="80"
-                  y="34"
-                  width="20"
-                  height="16"
-                  style="animation-delay: 2.5s"
-                />
-              </g>
-            </svg>
-            <div>
-              <h3>Plan</h3>
-              <p>
-                Structure scope, resources, governance, risks and the path to
-                delivery.
-              </p>
-            </div>
-          </div>
-          <div class="card rv">
-            <div class="mono">04</div>
-            <svg viewBox="0 0 120 60">
-              <rect class="s" x="15" y="6" width="90" height="12" />
-              <rect class="s" x="15" y="24" width="90" height="12" />
-              <rect class="s" x="15" y="42" width="90" height="12" />
-              <rect class="f sl" x="45" y="8" width="30" height="8" />
-              <rect
-                class="f sl"
-                x="45"
-                y="26"
-                width="30"
-                height="8"
-                style="animation-delay: 0.5s"
-              />
-              <rect
-                class="f sl"
-                x="45"
-                y="44"
-                width="30"
-                height="8"
-                style="animation-delay: 1s"
-              />
-            </svg>
-            <div>
-              <h3>Architect</h3>
-              <p>
-                Design the systems, data, integrations and platforms that make
-                strategy real.
-              </p>
-            </div>
-          </div>
-          <div class="card rv">
-            <div class="mono">05</div>
-            <svg viewBox="0 0 120 60">
-              <path class="s" d="M0 30H35L45 10L60 50L72 22L80 30H120" />
-              <path
-                class="g pr"
-                stroke-dasharray="200"
-                d="M0 30H35L45 10L60 50L72 22L80 30H120"
-              />
-            </svg>
-            <div>
-              <h3>Execute</h3>
-              <p>
-                Implement with disciplined communication, documentation and
-                ownership.
-              </p>
-            </div>
-          </div>
-          <div class="card rv">
-            <div class="mono">06</div>
-            <svg viewBox="0 0 120 60">
-              <circle class="s" cx="60" cy="30" r="20" />
-              <g class="sp"><circle class="f" cx="60" cy="10" r="4" /></g>
-              <path class="g d" d="M60 18A12 12 0 1 1 48 30" />
-            </svg>
-            <div>
-              <h3>Optimize</h3>
-              <p>
-                Improve what exists and keep technology aligned with the
-                business.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="split">
-          <div class="rv">
-            <div class="mono">Architecture</div>
-            <h2 style="margin: 16px 0 8px">Built to <em>hold.</em></h2>
-            <div class="lay">
-              <div>Strategy &amp; objectives</div>
-              <div>Data &amp; process</div>
-              <div>Integrations &amp; automation</div>
-              <div>Platforms &amp; delivery</div>
-            </div>
-          </div>
-          <div class="rv">
-            <div class="mono">03 / 04 — Already moving</div>
-            <div class="eng">
-              <span class="dot"></span>
-              <div>
-                <b>Digital application initiative</b>
-                <p style="font-size: 14px; margin-top: 6px">
-                  Active delivery from clearer requirements through solution
-                  execution.
-                </p>
-              </div>
-            </div>
-            <div class="eng">
-              <span class="dot" style="animation-delay: 0.7s"></span>
-              <div>
-                <b>Technology direction and planning</b>
-                <p style="font-size: 14px; margin-top: 6px">
-                  Discovery around a complex business and technology question.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section style="background: rgba(23, 26, 23, 0.72)">
-        <div class="rv">
-          <div class="mono">Selected work</div>
-          <h2 style="margin: 16px 0">Proof of <em>progress.</em></h2>
+          <div class="mono">01 / 04 — Point of view</div>
+          <h2 style="margin: 16px 0 24px">Think before <em>we build.</em></h2>
           <p>
-            Three completed transformation stories across real estate,
-            engineering and startups.
+            Organizations rarely struggle because they lack another tool. They
+            struggle because the objective is unclear and priorities compete.
+            We make the problem legible first.
           </p>
         </div>
-        <div class="strip rv">
-          <div>
-            <b><span data-n="10">0</span><i>+</i></b
-            ><span>Startups supported</span>
-          </div>
-          <div>
-            <b><span data-n="3">0</span><i></i></b
-            ><span>Featured transformation stories</span>
-          </div>
-          <div><b>CRM + AI</b><span>Digital capabilities</span></div>
-          <div><b>Web + Mobile</b><span>Digital experiences</span></div>
+
+        <div class="orb rv orb-architecture">
+          <svg viewBox="0 0 240 240" role="img"
+            aria-label="Abstract visualization of connected strategy, structure, and outcomes">
+            <defs>
+              <linearGradient id="orbLine" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#C9F26B" stop-opacity=".9" />
+                <stop offset="100%" stop-color="#C9F26B" stop-opacity=".12" />
+              </linearGradient>
+            </defs>
+
+            <!-- Geometric framework -->
+            <path class="orb-frame" d="M120 22 L218 80 L218 160 L120 218 L22 160 L22 80 Z" />
+
+            <path class="orb-frame orb-frame-inner" d="M120 54 L190 94 L190 146 L120 186 L50 146 L50 94 Z" />
+
+            <!-- Connecting architecture -->
+            <path class="orb-connector" d="M120 22 V54 M218 80 L190 94 M218 160 L190 146
+         M120 218 V186 M22 160 L50 146 M22 80 L50 94" />
+
+            <path class="orb-connector orb-signal" d="M50 94 L120 120 L190 94
+         M50 146 L120 120 L190 146
+         M120 54 V186" />
+
+            <!-- Moving signal -->
+            <path class="orb-flow" d="M50 94 L120 120 L190 146" />
+
+            <!-- Structural nodes -->
+            <g class="orb-nodes">
+              <rect x="115" y="17" width="10" height="10" rx="1" />
+              <rect x="213" y="75" width="10" height="10" rx="1" />
+              <rect x="213" y="155" width="10" height="10" rx="1" />
+              <rect x="115" y="213" width="10" height="10" rx="1" />
+              <rect x="17" y="155" width="10" height="10" rx="1" />
+              <rect x="17" y="75" width="10" height="10" rx="1" />
+            </g>
+
+            <!-- Central solution -->
+            <path class="orb-core" d="M120 91 L149 120 L120 149 L91 120 Z" />
+
+            <path class="orb-core-inner" d="M120 105 L135 120 L120 135 L105 120 Z" />
+
+            <circle class="orb-pulse" cx="120" cy="120" r="3" />
+
+            <!-- Labels -->
+            <g class="orb-labels">
+              <text x="120" y="8" text-anchor="middle">01 / STRATEGY</text>
+              <text x="120" y="237" text-anchor="middle">02 / OUTCOME</text>
+            </g>
+          </svg>
         </div>
+
+      </div>
+    </section>
+
+    <section id="method" style="background: rgba(23, 26, 23, 0.72)">
+      <div class="rv">
+        <div class="mono">02 / 04 — How we work</div>
+        <h2 style="margin-top: 16px">From objective <em>to outcome.</em></h2>
+      </div>
+      <div class="grid">
+        <div class="card rv">
+          <div class="mono">01</div>
+          <svg viewBox="0 0 120 60">
+            <circle class="s" cx="60" cy="30" r="22" />
+            <circle class="f pu" cx="30" cy="18" r="2" />
+            <circle class="f pu" cx="84" cy="40" r="2" style="animation-delay: 0.6s" />
+            <circle class="f pu" cx="70" cy="14" r="2" style="animation-delay: 1.2s" />
+            <circle class="g" cx="60" cy="30" r="3" />
+          </svg>
+          <div>
+            <h3>Understand</h3>
+            <p>
+              Define the objective, context, constraints and people affected.
+            </p>
+          </div>
+        </div>
+        <div class="card rv">
+          <div class="mono">02</div>
+          <svg viewBox="0 0 120 60">
+            <path class="s" d="M5 30H40C60 30 60 10 80 10H115M40 30C60 30 60 50 80 50H115" />
+            <path class="g d" d="M5 30H40C60 30 60 10 80 10H115" />
+          </svg>
+          <div>
+            <h3>Strategize</h3>
+            <p>
+              Assess options, set priorities and create a direction worth
+              investing in.
+            </p>
+          </div>
+        </div>
+        <div class="card rv">
+          <div class="mono">03</div>
+          <svg viewBox="0 0 120 60">
+            <g class="f">
+              <rect class="sq" x="20" y="10" width="20" height="16" />
+              <rect class="sq" x="50" y="10" width="20" height="16" style="animation-delay: 0.5s" />
+              <rect class="sq" x="80" y="10" width="20" height="16" style="animation-delay: 1s" />
+              <rect class="sq" x="20" y="34" width="20" height="16" style="animation-delay: 1.5s" />
+              <rect class="sq" x="50" y="34" width="20" height="16" style="animation-delay: 2s" />
+              <rect class="sq" x="80" y="34" width="20" height="16" style="animation-delay: 2.5s" />
+            </g>
+          </svg>
+          <div>
+            <h3>Plan</h3>
+            <p>
+              Structure scope, resources, governance, risks and the path to
+              delivery.
+            </p>
+          </div>
+        </div>
+        <div class="card rv">
+          <div class="mono">04</div>
+          <svg viewBox="0 0 120 60">
+            <rect class="s" x="15" y="6" width="90" height="12" />
+            <rect class="s" x="15" y="24" width="90" height="12" />
+            <rect class="s" x="15" y="42" width="90" height="12" />
+            <rect class="f sl" x="45" y="8" width="30" height="8" />
+            <rect class="f sl" x="45" y="26" width="30" height="8" style="animation-delay: 0.5s" />
+            <rect class="f sl" x="45" y="44" width="30" height="8" style="animation-delay: 1s" />
+          </svg>
+          <div>
+            <h3>Architect</h3>
+            <p>
+              Design the systems, data, integrations and platforms that make
+              strategy real.
+            </p>
+          </div>
+        </div>
+        <div class="card rv">
+          <div class="mono">05</div>
+          <svg viewBox="0 0 120 60">
+            <path class="s" d="M0 30H35L45 10L60 50L72 22L80 30H120" />
+            <path class="g pr" stroke-dasharray="200" d="M0 30H35L45 10L60 50L72 22L80 30H120" />
+          </svg>
+          <div>
+            <h3>Execute</h3>
+            <p>
+              Implement with disciplined communication, documentation and
+              ownership.
+            </p>
+          </div>
+        </div>
+        <div class="card rv">
+          <div class="mono">06</div>
+          <svg viewBox="0 0 120 60">
+            <circle class="s" cx="60" cy="30" r="20" />
+            <g class="sp">
+              <circle class="f" cx="60" cy="10" r="4" />
+            </g>
+            <path class="g d" d="M60 18A12 12 0 1 1 48 30" />
+          </svg>
+          <div>
+            <h3>Optimize</h3>
+            <p>
+              Improve what exists and keep technology aligned with the
+              business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="split">
+        <div class="rv">
+          <div class="mono">Architecture</div>
+          <h2 style="margin: 16px 0 8px">Built to <em>hold.</em></h2>
+          <div class="lay">
+            <div>Strategy &amp; objectives</div>
+            <div>Data &amp; process</div>
+            <div>Integrations &amp; automation</div>
+            <div>Platforms &amp; delivery</div>
+          </div>
+        </div>
+        <div class="rv">
+          <div class="mono">03 / 04 — Already moving</div>
+          <div class="eng">
+            <span class="dot"></span>
+            <div>
+              <b>Digital application initiative</b>
+              <p style="font-size: 1rem; margin-top: 6px">
+                Active delivery from clearer requirements through solution
+                execution.
+              </p>
+            </div>
+          </div>
+          <div class="eng">
+            <span class="dot" style="animation-delay: 0.7s"></span>
+            <div>
+              <b>Technology direction and planning</b>
+              <p style="font-size: 1rem; margin-top: 6px">
+                Discovery around a complex business and technology question.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: rgba(23, 26, 23, 0.72)">
+      <div class="rv">
+        <div class="mono">Selected work</div>
+        <h2 style="margin: 16px 0">Proof of <em>progress.</em></h2>
+        <p>
+          Three completed transformation stories across real estate,
+          engineering and startups.
+        </p>
+      </div>
+      <div class="strip rv">
+        <div>
+          <b><span data-n="10">0</span><i>+</i></b>
+          <span>Startups supported</span>
+        </div>
+
+        <div>
+          <b><span data-n="3">0</span></b>
+          <span>Featured transformation stories</span>
+        </div>
+
+        <div>
+          <b>End-to-End</b>
+          <span>Digital Transformation</span>
+        </div>
+
+        <div>
+          <b>Web + Mobile</b>
+          <span>Digital Experiences</span>
+        </div>
+        </div>
+
         <p class="note">
           These figures describe the portfolio scope and capabilities, not
           independently measured financial outcomes.
@@ -368,53 +354,21 @@
         <div class="ctas">
           <a class="btn" href="projects.html">See our projects ↗</a>
         </div>
-      </section>
-      <section id="cta">
-        <div class="rings"><i></i><i></i><i></i></div>
-        <div class="mono">04 / 04 — The next clear move</div>
-        <h2 style="margin: 16px 0 32px">Start with <em>the problem.</em></h2>
-        <a class="btn" href="about.html#contact">Start a conversation ↗</a>
-      </section>
-    </main>
-    <footer>
-      <div class="fg">
-        <div>
-          <div class="logo">VARNIO<i>.</i></div>
-          <p style="margin-top: 12px; font-size: 14px">
-            Complexity, clarified.<br />Strategy, architecture and technology
-            execution for organizations navigating complex challenges.
-          </p>
-        </div>
-        <div>
-          <div class="mono">Explore</div>
-          <a href="what-we-do.html">What we do</a
-          ><a href="index.html#method">How we work</a
-          ><a href="what-we-do.html#architecture">Architecture</a
-          ><a href="projects.html">Projects</a><a href="about.html">About</a>
-        </div>
-        <div>
-          <div class="mono">Capabilities</div>
-          <a href="what-we-do.html">Strategy & Advisory</a
-          ><a href="what-we-do.html">Project & Organizational Planning</a
-          ><a href="what-we-do.html">CRM & Business Process Strategy</a
-          ><a href="what-we-do.html">Automation Strategy</a
-          ><a href="what-we-do.html">Solution Architecture</a>
-        </div>
-        <div>
-          <div class="mono">Connect</div>
-          <a href="about.html#contact">Start a conversation ↗</a
-          ><a href="mailto:hello@varnio.co.in">hello@varnio.co.in</a>
-        </div>
-      </div>
-      <div class="big" aria-hidden="true">VARNIO.</div>
-      <div class="copy mono">
-        <span>© 2026 Varnio. All rights reserved.</span
-        ><span>Strategy · Systems · Momentum</span>
-      </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="assets/gl.js"></script>
-    <script src="assets/main.js"></script>
-    <script src="assets/hero.js"></script>
-  </body>
+    </section>
+    <section id="cta">
+      <div class="rings"><i></i><i></i><i></i></div>
+      <div class="mono">04 / 04 — The next clear move</div>
+      <h2 style="margin: 16px 0 32px">Start with <em>the problem.</em></h2>
+      <a class="btn" href="about.html#contact">Start a conversation ↗</a>
+    </section>
+  </main>
+  <div data-component="footer"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/gl.js"></script>
+  <script src="assets/main.js"></script>
+  <script src="assets/hero.js"></script>
+  <script src="assets/components.js"></script>
+  </div>
+</body>
+
 </html>
