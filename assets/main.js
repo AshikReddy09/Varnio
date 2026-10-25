@@ -7,6 +7,35 @@ const caps = [
   "Digital Solutions",
   "Intelligent Automation",
 ];
+const siteNav = document.querySelector("nav");
+const menuToggle = siteNav?.querySelector(".menu-toggle");
+
+if (siteNav && menuToggle) {
+  const closeMenu = () => {
+    siteNav.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation");
+  };
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    siteNav.classList.toggle("is-open", !isOpen);
+    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Open navigation" : "Close navigation",
+    );
+  });
+
+  siteNav.querySelectorAll(".nl a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
+  });
+}
+
 const row = caps.map((t) => `<span>${t}</span><b>✦</b>`).join("");
 const mqe = document.getElementById("mq");
 if (mqe) mqe.innerHTML = row + row;
