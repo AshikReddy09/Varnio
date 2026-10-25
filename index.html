@@ -105,175 +105,303 @@
       <div id="mq"></div>
     </div>
 
-    <section>
-      <div class="split">
-        <div class="rv">
-          <div class="mono">01 / 04 — Point of view</div>
-          <h2 style="margin: 16px 0 24px">Think before <em>we build.</em></h2>
-          <p>
-            Organizations rarely struggle because they lack another tool. They
-            struggle because the objective is unclear and priorities compete.
-            We make the problem legible first.
-          </p>
-        </div>
 
-        <div class="orb rv orb-architecture">
-          <svg viewBox="0 0 240 240" role="img"
-            aria-label="Abstract visualization of connected strategy, structure, and outcomes">
-            <defs>
-              <linearGradient id="orbLine" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#C9F26B" stop-opacity=".9" />
-                <stop offset="100%" stop-color="#C9F26B" stop-opacity=".12" />
-              </linearGradient>
-            </defs>
+    <div class="orb rv orb-architecture">
+      <svg viewBox="0 0 420 300" role="img"
+        aria-label="Fragmented business processes converge into a clear, connected solution">
+        <defs>
+          <linearGradient id="signalFlow" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#C9F26B" stop-opacity="0.05" />
+            <stop offset="45%" stop-color="#C9F26B" stop-opacity="0.95" />
+            <stop offset="100%" stop-color="#C9F26B" stop-opacity="0.3" />
+          </linearGradient>
 
-            <!-- Geometric framework -->
-            <path class="orb-frame" d="M120 22 L218 80 L218 160 L120 218 L22 160 L22 80 Z" />
+          <linearGradient id="solutionFill" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#C9F26B" stop-opacity="0.16" />
+            <stop offset="100%" stop-color="#C9F26B" stop-opacity="0.015" />
+          </linearGradient>
 
-            <path class="orb-frame orb-frame-inner" d="M120 54 L190 94 L190 146 L120 186 L50 146 L50 94 Z" />
+          <filter id="signalGlow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="3" />
+          </filter>
+        </defs>
 
-            <!-- Connecting architecture -->
-            <path class="orb-connector" d="M120 22 V54 M218 80 L190 94 M218 160 L190 146
-         M120 218 V186 M22 160 L50 146 M22 80 L50 94" />
+        <!-- Subtle technical grid -->
+        <g class="workflow-grid">
+          <path d="M20 55H400 M20 100H400 M20 145H400 M20 190H400 M20 235H400" />
+          <path d="M60 30V260 M120 30V260 M180 30V260 M240 30V260 M300 30V260 M360 30V260" />
+        </g>
 
-            <path class="orb-connector orb-signal" d="M50 94 L120 120 L190 94
-         M50 146 L120 120 L190 146
-         M120 54 V186" />
+        <!-- Incoming information: fragmented and unaligned -->
+        <g class="workflow-input">
+          <path d="M24 77H53L64 88H91" />
+          <path d="M24 108H43L53 98H74" />
+          <path d="M24 143H57L68 132H90" />
+          <path d="M24 170H42L53 181H79" />
+          <path d="M24 207H57L67 197H91" />
 
-            <!-- Moving signal -->
-            <path class="orb-flow" d="M50 94 L120 120 L190 146" />
+          <rect x="34" y="69" width="5" height="5" />
+          <rect x="48" y="104" width="5" height="5" />
+          <rect x="39" y="137" width="5" height="5" />
+          <rect x="56" y="176" width="5" height="5" />
+          <rect x="34" y="201" width="5" height="5" />
+        </g>
 
-            <!-- Structural nodes -->
-            <g class="orb-nodes">
-              <rect x="115" y="17" width="10" height="10" rx="1" />
-              <rect x="213" y="75" width="10" height="10" rx="1" />
-              <rect x="213" y="155" width="10" height="10" rx="1" />
-              <rect x="115" y="213" width="10" height="10" rx="1" />
-              <rect x="17" y="155" width="10" height="10" rx="1" />
-              <rect x="17" y="75" width="10" height="10" rx="1" />
-            </g>
+        <!-- Transformation pathways -->
+        <g class="workflow-paths">
+          <path d="M91 88H119L151 119H181" />
+          <path d="M74 98H112L143 129H181" />
+          <path d="M90 132H181" />
+          <path d="M79 181H115L146 150H181" />
+          <path d="M91 197H124L156 165H181" />
+        </g>
 
-            <!-- Central solution -->
-            <path class="orb-core" d="M120 91 L149 120 L120 149 L91 120 Z" />
+        <!-- The transformation stage -->
+        <g class="workflow-engine">
+          <path class="engine-shell" d="M181 83H237L269 115V175L237 207H181Z" />
 
-            <path class="orb-core-inner" d="M120 105 L135 120 L120 135 L105 120 Z" />
+          <path class="engine-detail" d="M197 108H226L243 125V165L226 182H197" />
+          <path class="engine-detail" d="M207 119H224L232 127V163L224 171H207" />
 
-            <circle class="orb-pulse" cx="120" cy="120" r="3" />
+          <path class="engine-signal" d="M190 145H216L226 135L239 145L250 134" />
 
-            <!-- Labels -->
-            <g class="orb-labels">
-              <text x="120" y="8" text-anchor="middle">01 / STRATEGY</text>
-              <text x="120" y="237" text-anchor="middle">02 / OUTCOME</text>
-            </g>
-          </svg>
-        </div>
+          <rect class="engine-node" x="191" y="94" width="5" height="5" />
+          <rect class="engine-node" x="246" y="184" width="5" height="5" />
+        </g>
 
-      </div>
-    </section>
+        <!-- One continuous, resolved signal -->
+        <g class="workflow-output">
+          <path class="output-track" d="M269 145H308L320 133H395" />
+          <path class="output-track" d="M269 145H308L320 157H395" />
+          <path class="output-track" d="M320 133V157" />
 
-    <section id="method" style="background: rgba(23, 26, 23, 0.72)">
-      <div class="rv">
-        <div class="mono">02 / 04 — How we work</div>
-        <h2 style="margin-top: 16px">From objective <em>to outcome.</em></h2>
-      </div>
-      <div class="grid">
-        <div class="card rv">
-          <div class="mono">01</div>
-          <svg viewBox="0 0 120 60">
-            <circle class="s" cx="60" cy="30" r="22" />
-            <circle class="f pu" cx="30" cy="18" r="2" />
-            <circle class="f pu" cx="84" cy="40" r="2" style="animation-delay: 0.6s" />
-            <circle class="f pu" cx="70" cy="14" r="2" style="animation-delay: 1.2s" />
-            <circle class="g" cx="60" cy="30" r="3" />
-          </svg>
-          <div>
-            <h3>Understand</h3>
+          <path class="output-signal" d="M269 145H308L320 133H395" />
+          <path class="output-signal output-signal-lower" d="M269 145H308L320 157H395" />
+
+          <rect class="output-terminal" x="390" y="128" width="8" height="10" rx="1" />
+          <rect class="output-terminal" x="390" y="152" width="8" height="10" rx="1" />
+        </g>
+
+        <!-- Animated signal moving toward the outcome -->
+        <path class="workflow-pulse" d="M91 132H181L197 145H269L308 145L320 133H395" />
+
+        <!-- Editorial labels -->
+        <g class="workflow-labels">
+          <text x="24" y="42">01 / INPUT</text>
+          <text x="181" y="65">02 / TRANSFORM</text>
+          <text x="319" y="105">03 / OUTCOME</text>
+          <text x="24" y="250">COMPLEXITY</text>
+          <text x="396" y="250" text-anchor="end">CLARITY</text>
+        </g>
+
+        <!-- Small status indicator -->
+        <circle class="workflow-status" cx="258" cy="83" r="3" />
+        <text class="workflow-status-label" x="267" y="86">ALIGNED</text>
+      </svg>
+    </div>
+
+
+    <section class="method-section" id="method">
+      <div class="method-inner">
+        <header class="method-header">
+          <div class="method-kicker">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>02 / 04 — How we work</span>
+          </div>
+          <div class="method-heading">
+            <h2>From objective<br /><em>to outcome.</em></h2>
             <p>
-              Define the objective, context, constraints and people affected.
+              A clear path from the right question to lasting business impact.
+              Explore each step of how we make change practical.
             </p>
           </div>
-        </div>
-        <div class="card rv">
-          <div class="mono">02</div>
-          <svg viewBox="0 0 120 60">
-            <path class="s" d="M5 30H40C60 30 60 10 80 10H115M40 30C60 30 60 50 80 50H115" />
-            <path class="g d" d="M5 30H40C60 30 60 10 80 10H115" />
-          </svg>
-          <div>
-            <h3>Strategize</h3>
-            <p>
-              Assess options, set priorities and create a direction worth
-              investing in.
-            </p>
+          <div class="method-progress" aria-label="Process step 1 of 6">
+            <span>PROCESS</span>
+            <div
+              class="progress-track"
+              role="progressbar"
+              aria-label="Process progress"
+              aria-valuemin="0"
+              aria-valuemax="6"
+              aria-valuenow="1"
+            >
+              <div class="progress-fill"></div>
+            </div>
+            <span class="progress-count" aria-live="polite">01 / 06</span>
+          </div>
+        </header>
+
+        <div class="method-layout">
+          <div class="method-list">
+            <article class="method-card is-active" style="--i: 0; --accent: #c9f26b">
+              <button class="method-trigger" id="method-trigger-1" type="button" aria-expanded="true" aria-controls="method-details-1" data-step="1">
+                <span class="method-number">01</span>
+                <span class="method-copy">
+                  <span class="method-tag">Start with clarity</span>
+                  <span class="method-title">Understand <span class="method-arrow" aria-hidden="true">↗</span></span>
+                  <span class="method-summary">Define the objective, context, constraints and people affected.</span>
+                </span>
+                <span class="method-toggle" aria-hidden="true">+</span>
+                <span class="method-art" aria-hidden="true">
+                  <svg viewBox="0 0 140 100">
+                    <circle class="orbit orbit-one" cx="70" cy="50" r="34" fill="none" />
+                    <circle class="orbit orbit-two" cx="70" cy="50" r="22" fill="none" />
+                    <circle class="node" cx="70" cy="16" r="3" />
+                    <circle class="node" cx="100" cy="67" r="3" />
+                    <circle class="core" cx="70" cy="50" r="5" />
+                    <path class="art-line" d="M24 50H59M81 50h35" />
+                  </svg>
+                </span>
+              </button>
+              <div class="method-details" id="method-details-1" role="region" aria-labelledby="method-trigger-1" aria-hidden="false">
+                <div class="method-details-inner">
+                  <p>We listen to the people closest to the work, map the current reality and separate symptoms from the problem that needs solving.</p>
+                  <div class="method-outcome"><span>OUTPUT</span><span>A shared definition of success</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="method-card" style="--i: 1; --accent: #b8c8a6">
+              <button class="method-trigger" id="method-trigger-2" type="button" aria-expanded="false" aria-controls="method-details-2" data-step="2">
+                <span class="method-number">02</span>
+                <span class="method-copy">
+                  <span class="method-tag">Choose a direction</span>
+                  <span class="method-title">Strategize <span class="method-arrow" aria-hidden="true">↗</span></span>
+                  <span class="method-summary">Assess options, set priorities and create a direction worth investing in.</span>
+                </span>
+                <span class="method-toggle" aria-hidden="true">+</span>
+                <span class="method-art" aria-hidden="true">
+                  <svg viewBox="0 0 140 100">
+                    <path class="art-line" d="M15 50h36c22 0 22-28 45-28h29M51 50c22 0 22 28 45 28h29" fill="none" />
+                    <path class="signal" d="M15 50h36c22 0 22-28 45-28h29" fill="none" />
+                    <circle class="node" cx="51" cy="50" r="3" />
+                    <circle class="core" cx="96" cy="22" r="4" />
+                  </svg>
+                </span>
+              </button>
+              <div class="method-details" id="method-details-2" role="region" aria-labelledby="method-trigger-2" aria-hidden="true">
+                <div class="method-details-inner">
+                  <p>We compare opportunities against your goals, capabilities and constraints, then focus investment on the moves with the clearest value.</p>
+                  <div class="method-outcome"><span>OUTPUT</span><span>A prioritized strategic direction</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="method-card" style="--i: 2; --accent: #c9f26b">
+              <button class="method-trigger" id="method-trigger-3" type="button" aria-expanded="false" aria-controls="method-details-3" data-step="3">
+                <span class="method-number">03</span>
+                <span class="method-copy">
+                  <span class="method-tag">Make it actionable</span>
+                  <span class="method-title">Plan <span class="method-arrow" aria-hidden="true">↗</span></span>
+                  <span class="method-summary">Structure scope, resources, governance, risks and the path to delivery.</span>
+                </span>
+                <span class="method-toggle" aria-hidden="true">+</span>
+                <span class="method-art" aria-hidden="true">
+                  <svg viewBox="0 0 140 100">
+                    <rect class="art-box" x="27" y="19" width="26" height="24" rx="2" />
+                    <rect class="art-box" x="60" y="19" width="26" height="24" rx="2" />
+                    <rect class="art-box" x="93" y="19" width="26" height="24" rx="2" />
+                    <rect class="art-box" x="27" y="57" width="26" height="24" rx="2" />
+                    <rect class="art-box" x="60" y="57" width="26" height="24" rx="2" />
+                    <rect class="art-box" x="93" y="57" width="26" height="24" rx="2" />
+                    <circle class="node" cx="73" cy="31" r="3" />
+                    <circle class="node" cx="106" cy="69" r="3" />
+                  </svg>
+                </span>
+              </button>
+              <div class="method-details" id="method-details-3" role="region" aria-labelledby="method-trigger-3" aria-hidden="true">
+                <div class="method-details-inner">
+                  <p>We turn direction into a delivery plan with clear ownership, milestones, decision-making and room to manage risk as work progresses.</p>
+                  <div class="method-outcome"><span>OUTPUT</span><span>A practical roadmap with clear ownership</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="method-card" style="--i: 3; --accent: #b8c8a6">
+              <button class="method-trigger" id="method-trigger-4" type="button" aria-expanded="false" aria-controls="method-details-4" data-step="4">
+                <span class="method-number">04</span>
+                <span class="method-copy">
+                  <span class="method-tag">Design for what’s next</span>
+                  <span class="method-title">Architect <span class="method-arrow" aria-hidden="true">↗</span></span>
+                  <span class="method-summary">Design the systems, data, integrations and platforms that make strategy real.</span>
+                </span>
+                <span class="method-toggle" aria-hidden="true">+</span>
+                <span class="method-art" aria-hidden="true">
+                  <svg viewBox="0 0 140 100">
+                    <path class="art-line" d="M25 25h90v14H25zM25 45h90v14H25zM25 65h90v14H25z" fill="none" />
+                    <path class="signal" d="M49 32h34M64 52h34M39 72h34" fill="none" />
+                    <circle class="node" cx="101" cy="32" r="3" />
+                    <circle class="core" cx="48" cy="72" r="3" />
+                  </svg>
+                </span>
+              </button>
+              <div class="method-details" id="method-details-4" role="region" aria-labelledby="method-trigger-4" aria-hidden="true">
+                <div class="method-details-inner">
+                  <p>We shape secure, maintainable systems around the people and processes they serve, making room for integration, automation and growth.</p>
+                  <div class="method-outcome"><span>OUTPUT</span><span>A coherent, scalable solution design</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="method-card" style="--i: 4; --accent: #c9f26b">
+              <button class="method-trigger" id="method-trigger-5" type="button" aria-expanded="false" aria-controls="method-details-5" data-step="5">
+                <span class="method-number">05</span>
+                <span class="method-copy">
+                  <span class="method-tag">Turn plans into progress</span>
+                  <span class="method-title">Execute <span class="method-arrow" aria-hidden="true">↗</span></span>
+                  <span class="method-summary">Implement with disciplined communication, documentation and ownership.</span>
+                </span>
+                <span class="method-toggle" aria-hidden="true">+</span>
+                <span class="method-art" aria-hidden="true">
+                  <svg viewBox="0 0 140 100">
+                    <path class="art-line" d="M15 50h34l12-24 17 48 14-30 9 6h24" fill="none" />
+                    <path class="signal" d="M15 50h34l12-24 17 48 14-30 9 6h24" fill="none" />
+                    <circle class="node" cx="78" cy="74" r="3" />
+                  </svg>
+                </span>
+              </button>
+              <div class="method-details" id="method-details-5" role="region" aria-labelledby="method-trigger-5" aria-hidden="true">
+                <div class="method-details-inner">
+                  <p>We work alongside your team to deliver in focused increments, keep decisions visible and make sure knowledge stays with the people who need it.</p>
+                  <div class="method-outcome"><span>OUTPUT</span><span>Working change your team can own</span></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="method-card" style="--i: 5; --accent: #b8c8a6">
+              <button class="method-trigger" id="method-trigger-6" type="button" aria-expanded="false" aria-controls="method-details-6" data-step="6">
+                <span class="method-number">06</span>
+                <span class="method-copy">
+                  <span class="method-tag">Keep improving</span>
+                  <span class="method-title">Optimize <span class="method-arrow" aria-hidden="true">↗</span></span>
+                  <span class="method-summary">Improve what exists and keep technology aligned with the business.</span>
+                </span>
+                <span class="method-toggle" aria-hidden="true">+</span>
+                <span class="method-art" aria-hidden="true">
+                  <svg viewBox="0 0 140 100">
+                    <circle class="orbit" cx="70" cy="50" r="29" fill="none" />
+                    <path class="art-line" d="M70 21a29 29 0 1 1-27 40" fill="none" />
+                    <path class="signal" d="M43 61a29 29 0 0 1 27-40" fill="none" />
+                    <circle class="core" cx="70" cy="50" r="5" />
+                    <circle class="node" cx="70" cy="21" r="3" />
+                  </svg>
+                </span>
+              </button>
+              <div class="method-details" id="method-details-6" role="region" aria-labelledby="method-trigger-6" aria-hidden="true">
+                <div class="method-details-inner">
+                  <p>We track what’s working, learn from real-world use and refine the systems and processes so they continue to serve changing business needs.</p>
+                  <div class="method-outcome"><span>OUTPUT</span><span>Technology that keeps earning its place</span></div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="card rv">
-          <div class="mono">03</div>
-          <svg viewBox="0 0 120 60">
-            <g class="f">
-              <rect class="sq" x="20" y="10" width="20" height="16" />
-              <rect class="sq" x="50" y="10" width="20" height="16" style="animation-delay: 0.5s" />
-              <rect class="sq" x="80" y="10" width="20" height="16" style="animation-delay: 1s" />
-              <rect class="sq" x="20" y="34" width="20" height="16" style="animation-delay: 1.5s" />
-              <rect class="sq" x="50" y="34" width="20" height="16" style="animation-delay: 2s" />
-              <rect class="sq" x="80" y="34" width="20" height="16" style="animation-delay: 2.5s" />
-            </g>
-          </svg>
+
+        <div class="method-finish">
+          <span class="finish-symbol" aria-hidden="true">↗</span>
           <div>
-            <h3>Plan</h3>
-            <p>
-              Structure scope, resources, governance, risks and the path to
-              delivery.
-            </p>
-          </div>
-        </div>
-        <div class="card rv">
-          <div class="mono">04</div>
-          <svg viewBox="0 0 120 60">
-            <rect class="s" x="15" y="6" width="90" height="12" />
-            <rect class="s" x="15" y="24" width="90" height="12" />
-            <rect class="s" x="15" y="42" width="90" height="12" />
-            <rect class="f sl" x="45" y="8" width="30" height="8" />
-            <rect class="f sl" x="45" y="26" width="30" height="8" style="animation-delay: 0.5s" />
-            <rect class="f sl" x="45" y="44" width="30" height="8" style="animation-delay: 1s" />
-          </svg>
-          <div>
-            <h3>Architect</h3>
-            <p>
-              Design the systems, data, integrations and platforms that make
-              strategy real.
-            </p>
-          </div>
-        </div>
-        <div class="card rv">
-          <div class="mono">05</div>
-          <svg viewBox="0 0 120 60">
-            <path class="s" d="M0 30H35L45 10L60 50L72 22L80 30H120" />
-            <path class="g pr" stroke-dasharray="200" d="M0 30H35L45 10L60 50L72 22L80 30H120" />
-          </svg>
-          <div>
-            <h3>Execute</h3>
-            <p>
-              Implement with disciplined communication, documentation and
-              ownership.
-            </p>
-          </div>
-        </div>
-        <div class="card rv">
-          <div class="mono">06</div>
-          <svg viewBox="0 0 120 60">
-            <circle class="s" cx="60" cy="30" r="20" />
-            <g class="sp">
-              <circle class="f" cx="60" cy="10" r="4" />
-            </g>
-            <path class="g d" d="M60 18A12 12 0 1 1 48 30" />
-          </svg>
-          <div>
-            <h3>Optimize</h3>
-            <p>
-              Improve what exists and keep technology aligned with the
-              business.
-            </p>
+            <span class="mono">The result</span>
+            <p>Clearer decisions. Connected systems. Progress that lasts.</p>
           </div>
         </div>
       </div>
@@ -345,15 +473,15 @@
           <b>Web + Mobile</b>
           <span>Digital Experiences</span>
         </div>
-        </div>
+      </div>
 
-        <p class="note">
-          These figures describe the portfolio scope and capabilities, not
-          independently measured financial outcomes.
-        </p>
-        <div class="ctas">
-          <a class="btn" href="projects.html">See our projects ↗</a>
-        </div>
+      <p class="note">
+        These figures describe the portfolio scope and capabilities, not
+        independently measured financial outcomes.
+      </p>
+      <div class="ctas">
+        <a class="btn" href="projects.html">See our projects ↗</a>
+      </div>
     </section>
     <section id="cta">
       <div class="rings"><i></i><i></i><i></i></div>

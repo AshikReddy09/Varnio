@@ -1,12 +1,11 @@
 const caps = [
-  "Strategy & Advisory",
+  "Digital Transformation",
   "Project & Organizational Planning",
-  "CRM & Business Process Strategy",
+  "Business Process Strategy",
   "Automation Strategy",
   "Solution Architecture",
   "Digital Solutions",
   "Intelligent Automation",
-  "Optimization & Advisory",
 ];
 const row = caps.map((t) => `<span>${t}</span><b>✦</b>`).join("");
 const mqe = document.getElementById("mq");
@@ -29,6 +28,51 @@ function observeRevealElements() {
 }
 observeRevealElements();
 window.addEventListener("components:loaded", observeRevealElements);
+
+const methodSection = document.getElementById("method");
+if (methodSection) {
+  const triggers = [...methodSection.querySelectorAll(".method-trigger")];
+  const progress = methodSection.querySelector(".progress-track");
+  const progressFill = methodSection.querySelector(".progress-fill");
+  const progressCount = methodSection.querySelector(".progress-count");
+  const progressLabel = methodSection.querySelector(".method-progress");
+
+  function setActiveMethod(trigger) {
+    const activeStep = trigger ? Number(trigger.dataset.step) : 0;
+    triggers.forEach((item) => {
+      const isActive = item === trigger;
+      const card = item.closest(".method-card");
+      const details = methodSection.querySelector(
+        `#${item.getAttribute("aria-controls")}`,
+      );
+      item.setAttribute("aria-expanded", String(isActive));
+      card.classList.toggle("is-active", isActive);
+      details.setAttribute("aria-hidden", String(!isActive));
+    });
+    if (progress) progress.setAttribute("aria-valuenow", String(activeStep));
+    if (progressFill) {
+      progressFill.style.width = `${(activeStep / triggers.length) * 100}%`;
+    }
+    if (progressCount) {
+      progressCount.textContent = `${String(activeStep).padStart(2, "0")} / ${String(triggers.length).padStart(2, "0")}`;
+    }
+    if (progressLabel) {
+      progressLabel.setAttribute(
+        "aria-label",
+        `Process step ${activeStep} of ${triggers.length}`,
+      );
+    }
+  }
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      setActiveMethod(
+        trigger.getAttribute("aria-expanded") === "true" ? null : trigger,
+      );
+    });
+  });
+}
+
 const bar = document.getElementById("bar");
 addEventListener(
   "scroll",
