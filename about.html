@@ -65,8 +65,13 @@
     <div id="bar"></div>
     <nav>
       <a class="logo" href="index.html">VARNIO<i>.</i></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+        <span>Menu</span>
+      </button>
       <div
         class="nl"
+        id="site-navigation"
         style="
           display: flex;
           gap: 26px;

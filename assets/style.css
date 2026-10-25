@@ -1177,6 +1177,9 @@ nav {
   backdrop-filter: blur(10px);
   background: rgba(17, 19, 17, 0.5);
 }
+.menu-toggle {
+  display: none;
+}
 .logo {
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1617,6 +1620,73 @@ svg .f {
   }
   nav .hide {
     display: none;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 16px 20px;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 10px 12px;
+    border: 0;
+    background: transparent;
+    color: var(--bone);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .menu-toggle:focus-visible {
+    outline: 1px solid var(--signal);
+    outline-offset: 4px;
+  }
+
+  .menu-icon {
+    display: grid;
+    gap: 5px;
+    width: 18px;
+  }
+
+  .menu-icon span {
+    display: block;
+    height: 1px;
+    background: currentColor;
+    transition: transform 0.2s ease;
+  }
+
+  nav.is-open .menu-icon span:first-child {
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  nav.is-open .menu-icon span:last-child {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  nav .nl {
+    display: none !important;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 0 !important;
+    padding-top: 12px;
+  }
+
+  nav.is-open .nl {
+    display: flex !important;
+  }
+
+  nav .nl .hide {
+    display: block;
+    padding: 12px 0;
+    border-top: 1px solid var(--hair);
+  }
+
+  nav .nl .pill {
+    align-self: flex-start;
+    margin-top: 12px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
